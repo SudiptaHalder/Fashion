@@ -7,7 +7,7 @@ const ServicesMetricsSection = styled.section`
   font-size: 12px;
   box-sizing: border-box;
   -webkit-font-smoothing: inherit;
-  background-color: #000000;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
   will-change: transform;
   border-radius: 156px;
   display: flex;
@@ -22,6 +22,20 @@ const ServicesMetricsSection = styled.section`
   padding: 80px 0 60px 0;
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(120, 120, 120, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(120, 120, 120, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
 
   @media (max-width: 768px) {
     border-radius: 80px;
