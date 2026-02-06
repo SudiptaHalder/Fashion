@@ -397,7 +397,7 @@ const Hero: React.FC = () => {
         <BackgroundImage>
           <img
             decoding="auto"
-            src="/op.JPG"
+            src="/op.jpg"
             alt="Maverick"
             sizes="calc(min(100vw, 1920px) - 16px)"
           />
